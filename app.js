@@ -23,3 +23,16 @@ signupForm.addEventListener('submit', e => {
 
 // Initialize AOS
 AOS.init();
+
+// hamburger
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+burger?.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+// simple email sign-up
+const signupFormEl = document.getElementById('signupForm');
+signupFormEl?.addEventListener('submit', e => {
+  e.preventDefault();
+  alert('Thanks for signing up!');
+  e.target.reset();
+});

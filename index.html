@@ -1,136 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DentiCraft.ai</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DentiCraft.ai – The Art of Dentistry, Reimagined</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">DentiCraft.ai</a>
-            <nav id="nav-menu">
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#custom">Custom Orders</a></li>
-                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                </ul>
-            </nav>
-            <button id="hamburger" aria-label="menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </div>
-    </header>
+  <!-- ╔══════════════════ NAVBAR ══════════════════╗ -->
+  <header id="navbar" class="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="#home">DentiCraft.ai</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#custom">Custom Orders</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </nav>
+      <button id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-content" data-aos="fade-up">
-                <h1>The Art of Dentistry, Reimagined</h1>
-                <p>Bringing the precision of dentistry into every masterpiece.</p>
-                <a href="#shop" class="btn">Explore Collection</a>
-            </div>
-        </section>
+  <!-- ╔══════════════════ HERO ════════════════════╗ -->
+  <section id="home" class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1>The Art of Dentistry, <br><span>Reimagined</span></h1>
+      <p>Stunning AI-generated dental art, printed with museum-grade quality.</p>
+      <a class="btn btn--primary" href="#shop">Explore&nbsp;Collection</a>
+    </div>
+  </section>
 
-        <section class="products" id="shop">
-            <div class="container">
-                <h2>Our Shop</h2>
-                <div class="product-grid">
-                    <!-- Product Cards -->
-                    <div class="card" data-aos="fade-up">
-                        <img src="https://source.unsplash.com/random/800x800?tooth,art&1" alt="Product 1">
-                        <h3>Dental Art Piece 1</h3>
-                        <p class="price">$49.99</p>
-                        <button class="btn small">Quick View</button>
-                        <button class="btn add-cart">Add to Cart</button>
-                    </div>
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
-                        <img src="https://source.unsplash.com/random/800x800?tooth,art&2" alt="Product 2">
-                        <h3>Dental Art Piece 2</h3>
-                        <p class="price">$59.99</p>
-                        <button class="btn small">Quick View</button>
-                        <button class="btn add-cart">Add to Cart</button>
-                    </div>
-                    <div class="card" data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://source.unsplash.com/random/800x800?tooth,art&3" alt="Product 3">
-                        <h3>Dental Art Piece 3</h3>
-                        <p class="price">$39.99</p>
-                        <button class="btn small">Quick View</button>
-                        <button class="btn add-cart">Add to Cart</button>
-                    </div>
-                    <div class="card" data-aos="fade-up" data-aos-delay="300">
-                        <img src="https://source.unsplash.com/random/800x800?tooth,art&4" alt="Product 4">
-                        <h3>Dental Art Piece 4</h3>
-                        <p class="price">$49.99</p>
-                        <button class="btn small">Quick View</button>
-                        <button class="btn add-cart">Add to Cart</button>
-                    </div>
-                    <div class="card" data-aos="fade-up" data-aos-delay="400">
-                        <img src="https://source.unsplash.com/random/800x800?tooth,art&5" alt="Product 5">
-                        <h3>Dental Art Piece 5</h3>
-                        <p class="price">$69.99</p>
-                        <button class="btn small">Quick View</button>
-                        <button class="btn add-cart">Add to Cart</button>
-                    </div>
-                    <div class="card" data-aos="fade-up" data-aos-delay="500">
-                        <img src="https://source.unsplash.com/random/800x800?tooth,art&6" alt="Product 6">
-                        <h3>Dental Art Piece 6</h3>
-                        <p class="price">$79.99</p>
-                        <button class="btn small">Quick View</button>
-                        <button class="btn add-cart">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <!-- ╔══════════════════ SHOP GRID ═══════════════╗ -->
+  <section id="shop" class="shop container">
+    <h2>Our Shop</h2>
+    <div class="grid">
+      <!-- Six demo cards – replace with real products later -->
+      <!-- Card 1 -->
+      <article class="card">
+        <img src="https://source.unsplash.com/random/800x800?tooth,art&1" alt="">
+        <h3>Starry Night, Molar Moon Light</h3>
+        <p class="price">$70.00</p>
+        <button class="btn btn--secondary" onclick="alert('Added!')">Add to Cart</button>
+      </article>
+      <!-- duplicate ↑ five more times changing images/titles/prices -->
+    </div>
+    <button class="btn btn--primary outline" onclick="alert('Load more coming soon')">
+      Load More
+    </button>
+  </section>
 
-        <section class="story" id="gallery">
-            <div class="container story-grid">
-                <div class="story-text" data-aos="fade-right">
-                    <h2>Our Story</h2>
-                    <p>Discover a world where the precision of dentistry meets art. Each creation showcases meticulous craftsmanship blended with creative vision.</p>
-                </div>
-                <div class="story-image" data-aos="fade-left">
-                    <img src="https://source.unsplash.com/random/800x800?dentist,art" alt="Story Image">
-                </div>
-            </div>
-        </section>
+  <!-- ╔══════════════════ ABOUT ═══════════════════╗ -->
+  <section id="about" class="about">
+    <div class="container about__inner">
+      <img src="https://source.unsplash.com/random/900x900?dental,art" alt="">
+      <div>
+        <h2>Discover a world where the precision of dentistry meets the soul of art.</h2>
+        <p>
+          At DentiCraft.ai, we craft more than creations—we craft experiences. 
+          Each piece is a story waiting to resonate with yours.
+          Art that makes you smile.
+        </p>
+        <a href="#shop" class="btn btn--primary">Explore</a>
+        <a href="mailto:info@denticraft.ai" class="btn btn--secondary">Contact&nbsp;Us</a>
+      </div>
+    </div>
+  </section>
 
-        <section class="signup" id="custom">
-            <div class="container" data-aos="fade-up">
-                <h2>Stay in Touch</h2>
-                <p>Join our newsletter for updates and custom order openings.</p>
-                <form id="signup-form">
-                    <input type="email" id="email" placeholder="Your email" required>
-                    <button type="submit" class="btn">Submit</button>
-                </form>
-            </div>
-        </section>
-    </main>
+  <!-- ╔══════════════════ FOOTER ═════════════════╗ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <h3>Join Us</h3>
+        <form id="signupForm">
+          <input type="email" placeholder="Email" required>
+          <button class="btn btn--primary">Submit</button>
+        </form>
+      </div>
+      <div class="footer__col nav__links">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#custom">Custom Orders</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <p class="copyright">© DentiCraft.ai 2025. Powered by GitHub Pages.</p>
+  </footer>
 
-    <footer>
-        <div class="container footer-content">
-            <nav>
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#custom">Custom Orders</a></li>
-                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                </ul>
-            </nav>
-            <p>© DentiCraft.ai 2025</p>
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
