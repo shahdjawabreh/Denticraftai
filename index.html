@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- ╔══════════════════ NAVBAR ══════════════════╗ -->
+  <!-- NAV -->
   <header id="navbar" class="nav">
     <div class="container nav__inner">
       <a class="logo" href="#home">DentiCraft.ai</a>
@@ -18,7 +18,7 @@
         <a href="#shop">Shop</a>
         <a href="#gallery">Gallery</a>
         <a href="#custom">Custom Orders</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://instagram.com/denticraft.ai" target="_blank">Instagram</a>
       </nav>
       <button id="burger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -26,57 +26,83 @@
     </div>
   </header>
 
-  <!-- ╔══════════════════ HERO ════════════════════╗ -->
+  <!-- HERO -->
   <section id="home" class="hero">
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <h1>The Art of Dentistry, <br><span>Reimagined</span></h1>
-      <p>Stunning AI-generated dental art, printed with museum-grade quality.</p>
+      <h1>The Art of Dentistry,<br><span>Reimagined</span></h1>
+      <p>AI-driven dental art printed on premium canvas.</p>
       <a class="btn btn--primary" href="#shop">Explore&nbsp;Collection</a>
     </div>
   </section>
 
-  <!-- ╔══════════════════ SHOP GRID ═══════════════╗ -->
+  <!-- SHOP -->
   <section id="shop" class="shop container">
     <h2>Our Shop</h2>
     <div class="grid">
-      <!-- Six demo cards – replace with real products later -->
       <!-- Card 1 -->
       <article class="card">
-        <img src="https://source.unsplash.com/random/800x800?tooth,art&1" alt="">
-        <h3>Starry Night, Molar Moon Light</h3>
+        <img src="https://images.unsplash.com/photo-1566492031773-4b4e44660b14?auto=format&fit=crop&w=800&q=80" alt="Neon Tooth Cosmos">
+        <h3>Neon Tooth Cosmos</h3>
+        <p class="price">$80.00</p>
+        <button class="btn btn--secondary" onclick="alert('Added!')">Add to Cart</button>
+      </article>
+      <!-- Card 2 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1530133532239-372d8dccf287?auto=format&fit=crop&w=800&q=80" alt="Molar Moonlight">
+        <h3>Molar Moonlight</h3>
+        <p class="price">$68.00</p>
+        <button class="btn btn--secondary" onclick="alert('Added!')">Add to Cart</button>
+      </article>
+      <!-- Card 3 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1581091012184-7ac76be8e9ec?auto=format&fit=crop&w=800&q=80" alt="Enamel Galaxy">
+        <h3>Enamel Galaxy</h3>
+        <p class="price">$72.00</p>
+        <button class="btn btn--secondary" onclick="alert('Added!')">Add to Cart</button>
+      </article>
+      <!-- Card 4 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1599751445434-99cf4d4d3ab1?auto=format&fit=crop&w=800&q=80" alt="Gleam Aurora">
+        <h3>Gleam Aurora</h3>
+        <p class="price">$75.00</p>
+        <button class="btn btn--secondary" onclick="alert('Added!')">Add to Cart</button>
+      </article>
+      <!-- Card 5 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=80" alt="Ivory Nebula">
+        <h3>Ivory Nebula</h3>
+        <p class="price">$78.00</p>
+        <button class="btn btn--secondary" onclick="alert('Added!')">Add to Cart</button>
+      </article>
+      <!-- Card 6 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1606312619344-bd98d30df2d7?auto=format&fit=crop&w=800&q=80" alt="Starlit Bite">
+        <h3>Starlit Bite</h3>
         <p class="price">$70.00</p>
         <button class="btn btn--secondary" onclick="alert('Added!')">Add to Cart</button>
       </article>
-      <!-- duplicate ↑ five more times changing images/titles/prices -->
     </div>
-    <button class="btn btn--primary outline" onclick="alert('Load more coming soon')">
-      Load More
-    </button>
   </section>
 
-  <!-- ╔══════════════════ ABOUT ═══════════════════╗ -->
+  <!-- ABOUT -->
   <section id="about" class="about">
     <div class="container about__inner">
-      <img src="https://source.unsplash.com/random/900x900?dental,art" alt="">
+      <img src="https://images.unsplash.com/photo-1582152625939-bc296b4ba52d?auto=format&fit=crop&w=900&q=80" alt="Artist brushing a ceramic tooth">
       <div>
-        <h2>Discover a world where the precision of dentistry meets the soul of art.</h2>
-        <p>
-          At DentiCraft.ai, we craft more than creations—we craft experiences. 
-          Each piece is a story waiting to resonate with yours.
-          Art that makes you smile.
-        </p>
-        <a href="#shop" class="btn btn--primary">Explore</a>
+        <h2>Where Dentistry Meets the Cosmos</h2>
+        <p>DentiCraft.ai fuses clinical precision with limitless creativity, crafting visual stories that make you smile before you ever sit in the chair.</p>
+        <a href="#shop" class="btn btn--primary">Shop Now</a>
         <a href="mailto:info@denticraft.ai" class="btn btn--secondary">Contact&nbsp;Us</a>
       </div>
     </div>
   </section>
 
-  <!-- ╔══════════════════ FOOTER ═════════════════╗ -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__col">
-        <h3>Join Us</h3>
+        <h3>Stay in the loop</h3>
         <form id="signupForm">
           <input type="email" placeholder="Email" required>
           <button class="btn btn--primary">Submit</button>
@@ -87,10 +113,10 @@
         <a href="#shop">Shop</a>
         <a href="#gallery">Gallery</a>
         <a href="#custom">Custom Orders</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://instagram.com/denticraft.ai" target="_blank">Instagram</a>
       </div>
     </div>
-    <p class="copyright">© DentiCraft.ai 2025. Powered by GitHub Pages.</p>
+    <p class="copyright">© DentiCraft.ai 2025</p>
   </footer>
 
   <script src="app.js"></script>
