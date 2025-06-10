@@ -80,3 +80,19 @@ copyright { font-size:.85rem; text-align:center; margin-top:2rem; color:var(--te
   .nav__links.open{transform:translateX(0);}
   .nav__links a{margin:1rem 0; font-size:1.2rem;}
 }
+
+/* ─── HERO VIDEO ───────────────────────── */
+#heroVideo {
+  position: absolute;
+  inset: 0;             /* stretch to all edges */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* crop to fill */
+  z-index: -2;          /* behind overlay & text */
+  opacity: 0.6;         /* subtle dark video behind content */
+  background: #000;     /* fallback colour */
+}
+/* When user prefers reduced motion, pause the video */
+@media (prefers-reduced-motion: reduce) {
+  #heroVideo { display: none; }
+}
