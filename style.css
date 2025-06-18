@@ -96,3 +96,45 @@ copyright { font-size:.85rem; text-align:center; margin-top:2rem; color:var(--te
 @media (prefers-reduced-motion: reduce) {
   #heroVideo { display: none; }
 }
+
+/* ─── GALLERY PAGE ─────────────────── */
+.gallery-page { padding-top: 6rem; }
+
+/* thumbnails */
+.gallery-grid img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform .3s;
+}
+.gallery-grid img:hover { transform: scale(1.06); }
+
+/* lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.85);
+  display: none;
+  place-items: center;
+  z-index: 999;
+}
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.lightbox.open { display: grid; }
+
+/* close on ESC hint */
+.lightbox::after {
+  content: "×  click or press ESC to close";
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: #fff;
+  font-size: 1rem;
+  font-family: var(--font);
+  opacity: .7;
+}
