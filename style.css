@@ -218,6 +218,7 @@ copyright { font-size:.85rem; text-align:center; margin-top:2rem; color:var(--te
   transition: opacity .35s;
   text-align: center;
   padding: 0 1rem;
+  pointer-events: none;     /* يجعل الـOverlay شفافاً للأحداث */
 }
 .g-item:hover .g-caption { opacity: 1; }
 

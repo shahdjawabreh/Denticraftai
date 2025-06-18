@@ -66,8 +66,10 @@ const showNext = (dir) => {
   lbImg.src    = imgs[currentIndex].src;
 };
 
-/* ربط الأحداث بالصور */
-imgs.forEach((img, i) => img.addEventListener('click', () => openLB(i)));
+/* ربط الحدث على العنصر الأب figure لضمان التقاطه */
+document.querySelectorAll('.g-item').forEach((fig, i) =>
+  fig.addEventListener('click', () => openLB(i))
+);
 
 /* أزرار */
 btnClose.addEventListener('click', closeLB);
