@@ -25,8 +25,10 @@ if (signupForm) {
   });
 }
 
-// Initialize AOS
-AOS.init();
+// Initialize AOS (only if the library is loaded)
+if (typeof AOS !== 'undefined') {
+  AOS.init();
+}
 
 // hamburger
 const burger = document.getElementById('burger');
