@@ -37,23 +37,6 @@ signupFormEl?.addEventListener('submit', e => {
   e.target.reset();
 });
 
-// LIGHTBOX
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightboxImg');
-
-document.addEventListener('click', e => {
-  if (e.target.closest('.gallery-grid img')) {
-    lightboxImg.src = e.target.src;
-    lightbox.classList.add('open');
-  } else if (e.target === lightbox || lightbox.classList.contains('open')) {
-    lightbox.classList.remove('open');
-    lightboxImg.src = '';
-  }
-});
-
-document.addEventListener('keyup', e => {
-  if (e.key === 'Escape') lightbox.classList.remove('open');
-});
 
 /* ─── LIGHTBOX SCRIPT ─────────────────── */
 const imgs       = document.querySelectorAll('.gallery-grid img');
