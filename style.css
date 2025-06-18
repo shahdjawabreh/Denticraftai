@@ -220,3 +220,31 @@ copyright { font-size:.85rem; text-align:center; margin-top:2rem; color:var(--te
   padding: 0 1rem;
 }
 .g-item:hover .g-caption { opacity: 1; }
+
+/* ─── LIGHTBOX (نسخة متقدمة) ─────────────── */
+.lightbox {
+  position: fixed; inset: 0;
+  background: rgba(0, 0, 0, .85);
+  display: none; place-items: center;
+  z-index: 999;
+}
+.lightbox.open { display: grid; }
+
+.lightbox img {
+  max-width: 90vw;  max-height: 90vh;
+  border-radius: var(--radius);
+  box-shadow: 0 12px 30px rgba(0,0,0,.5);
+}
+
+.lb-close,
+.lb-arrow {
+  position: absolute; background: transparent; border: 0;
+  color: #fff; font-size: 2rem; cursor: pointer;
+  padding: .25rem .5rem;
+  transition: opacity .3s;
+}
+.lb-close   { top: 1.5rem; right: 2rem; }
+.lb-prev    { left: 1rem;  top: 50%; transform: translateY(-50%); }
+.lb-next    { right: 1rem; top: 50%; transform: translateY(-50%); }
+.lb-arrow:hover,
+.lb-close:hover { opacity: .7; }
