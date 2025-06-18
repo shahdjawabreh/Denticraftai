@@ -7,9 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <!-- shared navbar -->
   <header id="navbar" class="nav">
     <div class="container nav__inner">
       <a class="logo" href="index.html#home">DentiCraft.ai</a>
@@ -20,30 +20,19 @@
         <a href="index.html#custom">Custom Orders</a>
         <a href="https://instagram.com/denticraft.ai" target="_blank">Instagram</a>
       </nav>
-      <button id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <!-- main gallery -->
   <main class="gallery-page">
     <section class="gallery container">
       <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <figure class="g-item"><img src="assets/1.png" alt="Blue Wave String Art"></figure>
-        <figure class="g-item"><img src="assets/2.png" alt="Watercolor Tooth"></figure>
-        <figure class="g-item"><img src="assets/3.png" alt="Blooming Enamel"></figure>
-        <figure class="g-item"><img src="assets/1.png" alt="Blue Wave angle 2"></figure>
-        <figure class="g-item"><img src="assets/2.png" alt="Watercolor angle 2"></figure>
-        <figure class="g-item"><img src="assets/3.png" alt="Enamel angle 2"></figure>
-      </div>
+      <div class="gallery-grid"></div>  <!-- سيُملأ لاحقاً -->
     </section>
   </main>
 
-  <!-- lightbox modal -->
-  <div id="lightbox" class="lightbox">
-    <img id="lightboxImg" src="" alt="">
-  </div>
-
-  <script src="app.js"></script>
+  <div id="lightbox" class="lightbox"><img id="lightboxImg" src="" alt=""></div>
 </body>
 </html>
