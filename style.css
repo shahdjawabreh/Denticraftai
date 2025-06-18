@@ -194,3 +194,29 @@ copyright { font-size:.85rem; text-align:center; margin-top:2rem; color:var(--te
 @media (max-width: 1199px) { .gallery-grid { column-count: 3; } }
 @media (max-width: 991px)  { .gallery-grid { column-count: 2; } }
 @media (max-width: 599px)  { .gallery-grid { column-count: 1; } }
+
+/* ─── GALLERY HOVER EFFECT ─────────────── */
+.g-item {
+  position: relative;
+  transition: transform .35s cubic-bezier(.2,.7,.3,1), box-shadow .35s;
+}
+.g-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,.35);
+}
+/* Overlay caption */
+.g-caption {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0,0,0,.55);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity .35s;
+  text-align: center;
+  padding: 0 1rem;
+}
+.g-item:hover .g-caption { opacity: 1; }
